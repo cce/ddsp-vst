@@ -57,7 +57,7 @@ if(APPLE)
     set(CMAKE_XCODE_GENERATE_SCHEME OFF)
 
     # TODO: add universal binary support once tensorflow is supported on arm.
-    set(CMAKE_OSX_ARCHITECTURES x86_64 CACHE INTERNAL "")
+    set(CMAKE_OSX_ARCHITECTURES arm64 CACHE INTERNAL "")
     set(CMAKE_OSX_DEPLOYMENT_TARGET 10.14)
 
     # Automatically copy plugins post build on OSX.
